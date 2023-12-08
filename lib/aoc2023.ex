@@ -7,7 +7,9 @@ defmodule Aoc2023 do
     # :day_03,
     # :day_04,
     # :day_05,
-    :day_06
+    # :day_06,
+    # :day_07,
+    :day_08
   ]
 
   def run(), do: Enum.map(@completed_days, &run/1)
@@ -17,6 +19,8 @@ defmodule Aoc2023 do
   # defp run(:day_03, {:ok, input}), do: Aoc2023.Day03.run(input)
   # defp run(:day_04, {:ok, input}), do: Aoc2023.Day04.run(input)
   # defp run(:day_05, {:ok, input}), do: Aoc2023.Day05.run(input)
-  defp run(:day_06, {:ok, input}), do: Aoc2023.Day06.run(input)
+  # defp run(:day_06, {:ok, input}), do: Aoc2023.Day06.run(input)
+  # defp run(:day_07, {:ok, input}), do: Aoc2023.Day07.run(input)
+  defp run(:day_08, {:ok, input}), do: Aoc2023.Day08.run(input)
   defp run(day, {:error, reason}), do: Logger.error("error", reason: reason, day: day)
 end
